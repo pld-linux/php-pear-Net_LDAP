@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Net
-%define         _subclass       LDAP
+%define		_class		Net
+%define		_subclass	LDAP
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
