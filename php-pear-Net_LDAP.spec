@@ -12,7 +12,7 @@ License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	ddc42cfc1eeec1a6a433ee5b2cf69f62
-URL:		http://pear.php.net/package/%{_pearname}/
+URL:		http://pear.php.net/package/Net_LDAP/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
