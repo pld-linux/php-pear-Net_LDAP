@@ -27,7 +27,7 @@ handling, schemas, etc), but has:
 - support for TLS and ldap v3
 - simple modification, deletion and creation of ldapentries
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 %{_pearname} jest klonem perlowego Net::LDAP, czyli zorientowanego
