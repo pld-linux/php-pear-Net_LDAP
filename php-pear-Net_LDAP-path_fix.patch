@@ -1,5 +1,5 @@
---- php-pear-Net_LDAP-0.6.5/Net_LDAP-0.6.5/LDAP.php~	2004-03-08 12:42:44.000000000 +0100
-+++ php-pear-Net_LDAP-0.6.5/Net_LDAP-0.6.5/LDAP.php	2004-12-05 01:11:50.943301208 +0100
+--- php-pear-Net_LDAP-0.6.6/Net_LDAP-0.6.6/LDAP.php~	2004-03-08 12:42:44.000000000 +0100
++++ php-pear-Net_LDAP-0.6.6/Net_LDAP-0.6.6/LDAP.php	2004-12-05 01:11:50.943301208 +0100
 @@ -26,8 +26,8 @@
  // $Id$
  
