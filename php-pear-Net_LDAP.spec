@@ -4,7 +4,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - OO interface for searching and manipulating LDAP-entries
-Summary(pl):	%{_pearname} - zorientowany obiektowo interfejs do szukania i manipulowania pozycjami LDAP
+Summary(pl):	%{_pearname} - obiektowy interfejs do przeszukiwania i modyfikowania wpisów LDAP
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	1
@@ -29,13 +29,14 @@ handling, schemas, etc), but has:
 This class has in PEAR status: %{_status}.
 
 %description -l pl
-%{_pearname} jest klonem Perlowego Net::LDAP, obiektowego interfejsu do
-serwerów ldap. Nie posiada wszystkich mo¿liwo¶ci Net::LDAP, (obs³uga
-ldif, schematy, itp), ale ma nastêpuj±ce cechy:
-- prosty interfejs obiektowy do po³±czeñ, wyszukiwañ i dodawania nowych
-  pozycji
-- wsparcie dla TLS i ldap v3
-- mo¿liwo¶æ prostych modyfikacji, usuwania i tworzenia ldapentries
+%{_pearname} jest klonem perlowego Net::LDAP, czyli zorientowanego
+obiektowo interfejsu do serwerów LDAP. Nie posiada wszystkich
+mo¿liwo¶ci Net::LDAP (obs³uga ldif, schematy, itp), ale ma nastêpuj±ce
+cechy:
+- prosty interfejs obiektowy do po³±czeñ, wyszukiwañ i dodawania
+  nowych pozycji
+- obs³uga TLS i LDAP v3
+- mo¿liwo¶æ prostych modyfikacji, usuwania i tworzenia wpisów LDAP.
 
 Ta klasa ma w PEAR status: %{_status}.
 
