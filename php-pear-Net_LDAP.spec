@@ -9,6 +9,7 @@ Summary(pl):	%{_pearname} - obiektowy interfejs do przeszukiwania i modyfikowani
 Name:		php-pear-%{_pearname}
 Version:	0.6.6
 Release:	2
+Epoch:		0
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
