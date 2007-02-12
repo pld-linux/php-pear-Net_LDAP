@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - OO interface for searching and manipulating LDAP-entries
-Summary(pl):	%{_pearname} - obiektowy interfejs do przeszukiwania i modyfikowania wpisów LDAP
+Summary(pl.UTF-8):   %{_pearname} - obiektowy interfejs do przeszukiwania i modyfikowania wpisÃ³w LDAP
 Name:		php-pear-%{_pearname}
 Version:	0.6.6
 Release:	4
@@ -34,21 +34,21 @@ handling, schemas, etc), but has:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
+%description -l pl.UTF-8
 %{_pearname} jest klonem perlowego Net::LDAP, czyli zorientowanego
-obiektowo interfejsu do serwerów LDAP. Nie posiada wszystkich
-mo¿liwo¶ci Net::LDAP (obs³uga ldif, schematy, itp), ale ma nastêpuj±ce
+obiektowo interfejsu do serwerÃ³w LDAP. Nie posiada wszystkich
+moÅ¼liwoÅ›ci Net::LDAP (obsÅ‚uga ldif, schematy, itp), ale ma nastÄ™pujÄ…ce
 cechy:
-- prosty interfejs obiektowy do po³±czeñ, wyszukiwañ i dodawania
+- prosty interfejs obiektowy do poÅ‚Ä…czeÅ„, wyszukiwaÅ„ i dodawania
   nowych pozycji
-- obs³uga TLS i LDAP v3
-- mo¿liwo¶æ prostych modyfikacji, usuwania i tworzenia wpisów LDAP.
+- obsÅ‚uga TLS i LDAP v3
+- moÅ¼liwoÅ›Ä‡ prostych modyfikacji, usuwania i tworzenia wpisÃ³w LDAP.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -57,7 +57,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
