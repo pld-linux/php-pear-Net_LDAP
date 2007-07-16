@@ -4,18 +4,19 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
+%define		_rc	RC2
+%define		_rel	1
 Summary:	%{_pearname} - OO interface for searching and manipulating LDAP-entries
 Summary(pl.UTF-8):	%{_pearname} - obiektowy interfejs do przeszukiwania i modyfikowania wpisów LDAP
 Name:		php-pear-%{_pearname}
-Version:	0.6.6
-Release:	4
+Version:	1.0.0
+Release:	0.%{_rc}.%{_rel}
 Epoch:		0
 License:	LGPL
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	d19f11c671122d0ff30928d86a868096
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
+# Source0-md5:	31782acbb3c2def62ec281fc78069f16
 Patch0:		%{name}-path_fix.patch
-Patch1:		%{name}-bug-8286.patch
 URL:		http://pear.php.net/package/Net_LDAP/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -63,15 +64,8 @@ Testy dla PEAR::%{_pearname}.
 %prep
 %pear_package_setup
 
-rm -f docs/%{_pearname}/LICENSE # GPL V2.1
-
-install -d ./%{php_pear_dir}/tests/%{_pearname}
-mv docs/%{_pearname}/tests/* ./%{php_pear_dir}/tests/%{_pearname}
-rmdir docs/%{_pearname}/tests
-
-%patch1 -p1
 cd ./%{php_pear_dir}/%{_class}
-%patch0 -p2
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT

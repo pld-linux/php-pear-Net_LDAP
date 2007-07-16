@@ -1,13 +1,39 @@
---- php-pear-Net_LDAP-0.6.6/Net_LDAP-0.6.6/LDAP.php~	2004-03-08 12:42:44.000000000 +0100
-+++ php-pear-Net_LDAP-0.6.6/Net_LDAP-0.6.6/LDAP.php	2004-12-05 01:11:50.943301208 +0100
-@@ -26,8 +26,8 @@
- // $Id$
- 
+--- Net/LDAP.php~	2007-07-16 20:25:11.122659476 +0300
++++ Net/LDAP.php	2007-07-16 20:25:50.183551314 +0300
+@@ -23,10 +23,10 @@
+  * Package includes.
+  */
  require_once('PEAR.php');
 -require_once('LDAP/Entry.php');
 -require_once('LDAP/Search.php');
+-require_once('LDAP/Util.php');
+-require_once('LDAP/Filter.php');
 +require_once('Net/LDAP/Entry.php');
 +require_once('Net/LDAP/Search.php');
++require_once('Net/LDAP/Util.php');
++require_once('Net/LDAP/Filter.php');
  
  /**
-  * Net_LDAP - manipulate LDAP servers the right way!
+  *  Error constants for errors that are not LDAP errors.
+--- Net/LDAP/Entry.php~	2007-07-16 20:26:28.774432368 +0300
++++ Net/LDAP/Entry.php	2007-07-16 20:27:59.226497239 +0300
+@@ -25,7 +25,7 @@
+ // $Id$
+ 
+ require_once("PEAR.php");
+-require_once('Util.php');
++require_once('Net/LDAP/Util.php');
+ 
+ /**
+  * Object representation of a directory entry
+--- Net/LDAP/Filter.php~	2007-07-16 20:26:28.784432596 +0300
++++ Net/LDAP/Filter.php	2007-07-16 20:28:29.607190716 +0300
+@@ -25,7 +25,7 @@
+ // $Id$
+ 
+ require_once("PEAR.php");
+-require_once('Util.php');
++require_once('Net/LDAP/Util.php');
+ 
+ /**
+ * Object representation of a part of a LDAP filter.
