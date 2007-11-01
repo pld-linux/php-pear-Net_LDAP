@@ -1,39 +1,42 @@
 --- Net/LDAP.php~	2007-07-16 20:25:11.122659476 +0300
 +++ Net/LDAP.php	2007-07-16 20:25:50.183551314 +0300
-@@ -23,10 +23,10 @@
+@@ -23,12 +23,12 @@
   * Package includes.
   */
- require_once('PEAR.php');
--require_once('LDAP/Entry.php');
--require_once('LDAP/Search.php');
--require_once('LDAP/Util.php');
--require_once('LDAP/Filter.php');
-+require_once('Net/LDAP/Entry.php');
-+require_once('Net/LDAP/Search.php');
-+require_once('Net/LDAP/Util.php');
-+require_once('Net/LDAP/Filter.php');
+ require_once 'PEAR.php';
+-require_once 'LDAP/RootDSE.php';
++require_once 'Net/LDAP/RootDSE.php';
+ require_once 'Net/LDAP/Schema.php';
+-require_once 'LDAP/Entry.php';
+-require_once 'LDAP/Search.php';
+-require_once 'LDAP/Util.php';
+-require_once 'LDAP/Filter.php';
++require_once 'Net/LDAP/Entry.php';
++require_once 'Net/LDAP/Search.php';
++require_once 'Net/LDAP/Util.php';
++require_once 'Net/LDAP/Filter.php';
  
  /**
   *  Error constants for errors that are not LDAP errors.
 --- Net/LDAP/Entry.php~	2007-07-16 20:26:28.774432368 +0300
 +++ Net/LDAP/Entry.php	2007-07-16 20:27:59.226497239 +0300
 @@ -25,7 +25,7 @@
- // $Id$
+ /* vim: set expandtab tabstop=4 shiftwidth=4: */
  
- require_once("PEAR.php");
--require_once('Util.php');
-+require_once('Net/LDAP/Util.php');
+ require_once 'PEAR.php';
+-require_once 'Util.php';
++require_once 'Net/LDAP/Util.php';
  
  /**
   * Object representation of a directory entry
 --- Net/LDAP/Filter.php~	2007-07-16 20:26:28.784432596 +0300
 +++ Net/LDAP/Filter.php	2007-07-16 20:28:29.607190716 +0300
 @@ -25,7 +25,7 @@
- // $Id$
+ /* vim: set expandtab tabstop=4 shiftwidth=4: */
  
- require_once("PEAR.php");
--require_once('Util.php');
-+require_once('Net/LDAP/Util.php');
+ require_once 'PEAR.php';
+-require_once 'Util.php';
++require_once 'Net/LDAP/Util.php';
  
  /**
  * Object representation of a part of a LDAP filter.

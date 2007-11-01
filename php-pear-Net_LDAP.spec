@@ -1,21 +1,19 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Net
 %define		_subclass	LDAP
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
-%define		_rc	RC2
-%define		_rel	1
 Summary:	%{_pearname} - OO interface for searching and manipulating LDAP-entries
 Summary(pl.UTF-8):	%{_pearname} - obiektowy interfejs do przeszukiwania i modyfikowania wpisów LDAP
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	0.%{_rc}.%{_rel}
+Release:	1
 Epoch:		0
 License:	LGPL
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
-# Source0-md5:	31782acbb3c2def62ec281fc78069f16
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	3e30e9a0256e325924a7c3917e337009
 Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/Net_LDAP/
 BuildRequires:	php-pear-PEAR
