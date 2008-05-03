@@ -1,6 +1,6 @@
 --- Net/LDAP.php~	2007-07-16 20:25:11.122659476 +0300
 +++ Net/LDAP.php	2007-07-16 20:25:50.183551314 +0300
-@@ -23,12 +23,12 @@
+@@ -23,13 +23,13 @@
   * Package includes.
   */
  require_once 'PEAR.php';
@@ -11,10 +11,12 @@
 -require_once 'LDAP/Search.php';
 -require_once 'LDAP/Util.php';
 -require_once 'LDAP/Filter.php';
+-require_once 'LDAP/LDIF.php';
 +require_once 'Net/LDAP/Entry.php';
 +require_once 'Net/LDAP/Search.php';
 +require_once 'Net/LDAP/Util.php';
 +require_once 'Net/LDAP/Filter.php';
++require_once 'Net/LDAP/LDIF.php';
  
  /**
   *  Error constants for errors that are not LDAP errors.
